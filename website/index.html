@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+
+    <title>Compu-World</title>
+
+    <link rel="stylesheet" type="text/css" href="materialize/dist/css/materialize.css"media="screen,projection"/>
+</head>
+<body class="grey lighten-3" style="margin-top:110px;">
+    <!-- Navigation -->
+
+
+        <a class="button-collapse black-text" style="display:none;" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+                <ul id="nav-mobile" class="side-nav full waves-effect waves-block" style="margin-top:5.5em;"> 
+                <span class="flow-text">
+                <li><a title="Home" href="index.html">Home</a></li>
+                    <li><a title="Products" href="products.html">Products</a></li>
+                    <li><a title="Services" href="Service.html">Services</a></li>
+                    <li><a title="Packages" href="packages.html">Packages</a></li></span>
+                </ul> 
+    <!-- End -->
+    <header class="row indigo white-text z-depth-1" style="position:fixed;left:0px;top:0px;right:0px; z-index:999;">
+        <h3 class="col s2 lighten-2 center-align"><a onclick="menu();" class="white-text waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a></h3><h3 class="col s10">Compu-World</h3>
+    </header>
+<div id="container" class="container">
+        <!-- Dynamic contents -->
+        
+<center class="card z-depth-1">
+        <h3 class="blue-grey-text center-align">Welcome</h3>
+</center> 
+    <div class="card waves-effect waves-block">
+        <div class="card-image">
+        <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/mac.jpg">
+                    <div class="caption center-align">
+                        <h5 class="light black-text text-lighten-3">Buy macbooks</h5>
+                    </div>
+            </li>
+            <li>
+                <img src="img/keyboard.jpg">
+                <div class="caption center-align">
+                    <h5 class="light black-text text-lighten-3">Keyboards</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/mouse.jpg">
+
+            </li>
+            <li>
+                <img src="img/disk.jpg">
+
+            </li>
+            <li>
+                <img src="img/netbook.jpg">
+
+            </li>
+            <li>
+                <img src="img/monitor.jpg">
+
+            </li>
+            <li>
+                <img src="img/part.jpg">
+
+            </li>
+        </ul>
+        </div>
+    </div>
+        <div class="card-content">
+            <span class="card-title grey-text">
+                Compu-World is a computer-shop in Mumbai.
+            </span>
+            <p class="card-action">
+            <span class="left-align"><a href="products.html">Our Products</a></span>
+            <span class="center-align"><a href="service.html">Our Services</a></span>
+            <span class="right-align"><a href="packages.html">Package Offers ( This includes free gifts worth Rs.2750.00)!</a></span>
+            </p>
+        </div>
+    </div>
+    <div class="card z-depth-1">
+        <div class="card-content">
+            <div class="card-title green-text"><big><strong>Our Team</strong></big></div>
+            <blockquote class="black-text"><div class="section">The team at That Computer Shop believe that no-one will care for your PC or Mac with the care and attention they will.</div><div class="divider pink accent-1"></div> <div class="section">With the highest quality parts and a full suite of software options we can get your computer or network running like new.</div><div class="divider pink accent-1"></div> <div class="section">Our qualified technicians can advise on the best solution for you.</div>
+            </blockquote>
+        </div>
+    </div>
+    
+</div>
+    <!-- /.container -->
+    
+            
+    <footer class="page-footer white-text indigo z-depth-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l6 ">
+                   <h5>Diva:</h5> 
+                    <h6 >Shop no. 4, Samarth Krupa Apartment,Near Abhydaya Bank,Diva (E).</h6>
+                </div>
+                <div class="col s12 m12 l6">
+                    <h5>Dombivli:</h5> 
+                    <h6>12 Fase 2,Nilje Lodha Heaven,Chandresh Manohar Bulding,Dombivli(E).</h6>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright white-text">
+        <div class="container">
+        <p> Copyright &copy; Compu-World 2015. All rights reserved.</p>
+            <a class="btn tooltipped btn-floating btn-large waves-effect waves-light pink accent-2 z-depth-1" data-position="top"  data-tooltip="Developer's profile" style="position:fixed;right:2%;bottom:1%;" href="http://www.facebook.com/karanvalecha619"><i class="mdi-communication-call"></i></a>
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="materialize/dist/js/materialize.js"></script>
+    <script>
+            var hidden=true;
+            function menu(){
+                if(hidden){
+                    $('.button-collapse').sideNav('show');
+                    hidden=false;
+                }
+                else{
+                    $('.button-collapse').sideNav('hide');
+                    hidden=true;
+                }
+              }
+    $(document).ready(function(){
+
+              $('.slider').slider({full_width: true}); //slider initializer
+                $(".button-collapse").sideNav();//mobile-navigation initializer
+                $('.collapsible').collapsible();
+
+    });
+
+            
+    </script>
+
+ <script src="slideShow.js"></script>
+</body>
+</html>
